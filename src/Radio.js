@@ -6,7 +6,7 @@ import defaultImage from './radio.jpg'
 
 const Radio =() => {  
     const [stations, setStations] = useState(); 
-    const [stationFilter, setStationFilter] = useState("all"); 
+    const [stationFilter, setStationFilter] = useState("All"); 
 
     useEffect(() => {
         setupApi(stationFilter).then((data) => { 
